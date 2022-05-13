@@ -1,0 +1,1 @@
+const cos = 1

@@ -1,0 +1,16 @@
+{
+  "name": "misc",
+  "version": "1.0.0",
+  "author": "Criticalcarpet <76092002+Criticalcarpet@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo test"
+  },
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  }
+}

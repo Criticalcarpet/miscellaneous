@@ -1,3 +1,4 @@
+// All the prompts used in the CLI
 
 import { createRequire } from 'module'
 const require = createRequire(import.meta.url)
@@ -23,6 +24,22 @@ export const fileAction = async () => {
           value: 'exit'
         }
       ]
+    }
+  ])
+  return response
+}
+
+export const directory = () => {
+  const response = inquirer.prompt([
+    {
+      type: 'input',
+      name: 'source',
+      message: 'Enter the parent directory(full path)'
+    },
+    {
+      type: 'input',
+      name: 'destination',
+      message: 'Enter the destination directory(full path)'
     }
   ])
   return response

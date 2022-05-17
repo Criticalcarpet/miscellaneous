@@ -44,3 +44,14 @@ export const directory = () => {
   ])
   return response
 }
+
+export const sourceStructure = () => {
+  const response = inquirer.prompt([
+    {
+      type: 'confirm',
+      name: 'structure',
+      message: 'Do you want to maintain the structure of the source directory?'
+    }
+  ])
+  return response
+}
